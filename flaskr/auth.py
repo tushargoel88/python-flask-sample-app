@@ -18,6 +18,7 @@ bp = Blueprint("auth", __name__, url_prefix="/auth")
 
 def login_required(view):
     """View decorator that redirects anonymous users to the login page."""
+    """View decorator that redirects anonymous users to the login page- Change"""
 
     @functools.wraps(view)
     def wrapped_view(**kwargs):
